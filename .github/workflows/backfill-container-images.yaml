@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ref/tags/${{ inputs.tag }}
+          ref: ${{ inputs.tag }}
           fetch-depth: 0
       - uses: docker/setup-qemu-action@v3
       - uses: docker/setup-buildx-action@v3
