@@ -1,4 +1,5 @@
 name: Backfill Container Image
+run-name: ${{ inputs.tag }}
 
 on:
  workflow_dispatch:
